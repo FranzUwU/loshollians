@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" tyoe="text/css" href="faqsstyle.css">
+	<title> Loshollians </title>
+</head>
+<body>
+<div class="header">
+</div>
+<div class="navbar">
+  <a href ="#"><img class="logo" src="images/logo.png"></a>
+  <a href="home.html">Home</a>
+  <a href="powerbrick.html">Powerbrick</a>
+  <a href="about.html">About</a>
+  <a href="faqs.html" class="act">FAQs</a>
+  <a href="contact.html">Contact Us</a>
+</div>
+<div class="faqs">
+<button class="accordion">How does the PowerBrick work?</button>
+	<div class="panel">
+	<p><br>This PowerBrick is similar with the other power banks the market has; however, this power source is solar powered and has an AC outlet. It's either you plug-in the adapter or the usb.</p>
+	<p> <br>
+	</p>
+	</div>
+
+	<button class="accordion">To which devices can the PowerBrick support?</button>
+	<div class="panel">
+	<p><br>It can charge your phone, laptop, drone, camera battery or any devices with battery not bigger than a laptop.<br></p>
+	<p> <br>
+	</p>
+	</div>
+
+	<button class="accordion">How long does it last?</button>
+	<div class="panel">
+	<p><br>It can last for a day (minimum) until three days (maximum).<br></p>
+	<p> <br>
+	</p>
+	</div>
+
+	<button class="accordion">Can the powerbank support other devices such as a TV?</button>
+	<div class="panel">
+	<p><br>Devices such as TV are not supported by our PowerBrick.<br></p>
+	<p> <br>
+	</p>
+	</div>
+
+	<button class="accordion">What is the capacity of the powerbank?</button>
+	<div class="panel">
+	<p><br>The power bank has 25,000 mAH<br></p>
+	<p> <br>
+	</p>
+	</div>
+
+	<button class="accordion">How fast does it charge a device?</button>
+	<div class="panel">
+	<p><br>It last depending on how you use it. It can charge your phone 8 times which could last atleast 3-5 days. With your laptops, it can only last through 1 usage: while in use - up to 50%, not in use - up to 70% <br></p>
+	<p> <br>
+	</p>
+	</div>
+
+	<script type="text/javascript">
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+		  acc[i].addEventListener("click", function() {
+		    this.classList.toggle("active");
+		    var panel = this.nextElementSibling;
+		    if (panel.style.maxHeight){
+		      panel.style.maxHeight = null;
+		    } else {
+		      panel.style.maxHeight = panel.scrollHeight + "px";
+		    } 
+		  });
+		}
+</script>
+	</script>
+</div>
+<footer class="footer-distributed">
+
+      <div class="footer-left">
+
+        <p class="footer-links">
+          <a href="#">Home</a>
+          ·
+          <a href="#">Powerbrick</a>
+          ·
+          <a href="#">About</a>
+          ·
+          <a href="#">FAQs</a>
+          ·
+          <a href="#">Contact Us</a>
+        </p>
+
+        <p class="footer-company-name">Loshollians &copy; 2015</p>
+
+      </div>
+
+      <div class="footer-right">
+
+        <form method="get" action="#">
+          <input placeholder="Search our website" name="search" />
+          <i class="fa fa-search"></i>
+        </form>
+
+      </div>
+
+    </footer>
+</body>
+</html>

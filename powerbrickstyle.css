@@ -1,0 +1,402 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: #202021;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: url(images/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-color: #1A4057;
+}
+
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  z-index: 500;
+}
+
+.logo{
+  width: 50px;
+  height: 100%;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+
+
+.info{
+  overflow: hidden;
+  text-align: justify;
+  background: #202021;
+  padding: 60px; 
+  color:white;
+}
+
+.info h1{
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.info p{
+  font-size: 22px;
+}
+
+.info .tagline{
+  text-align: center;
+}
+
+.product{
+  padding-left: 700px;
+  padding-top: 500px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.product-small img{
+  height: 92px;
+  margin: 10px 0;
+  cursor: pointer;
+  display: block;
+  opacity: 0.5;
+}
+
+.product-small img:hover{
+  opacity: 1;
+}
+
+.product-small{
+  float: left;
+}
+
+.img-container img{
+  height: 500px;
+}
+
+.img-container{
+  float: right;
+  padding: 10px;
+}
+
+.specs{
+  padding-right: 50px;
+  display: inline-block;
+  float: right;
+  height: 500px;
+  width: 800px;
+}
+
+
+.specs h1,  p{
+  color: white;
+  padding-bottom: 50px;
+}
+.specs h1{
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.specs p{
+  font-size: 22px
+}
+
+.border{
+  display: block;
+  margin: auto;
+  width: 160px;
+  height: 3px;
+  background: #DC143C;
+  margin-bottom: 50px;
+}
+
+.safe{
+  color: white;
+  text-align: center;
+}
+
+.safe i{
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  color: white;
+}
+
+.safe p{
+  font-size: 22px;
+}
+
+.safe h1{
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.package{
+  text-align: center;
+  color: white;
+}
+
+.package h1{
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.package ul li{
+  font-size: 22px;
+  text-align: center;
+}
+
+.footer-distributed{
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  font: bold 16px sans-serif;
+  text-align: left;
+
+  padding: 50px 60px;
+  margin-top: 80px;
+  overflow: hidden;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+  float: left;
+}
+
+.footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+  color:  #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+
+/* Footer right */
+
+.footer-distributed .footer-right{
+  float: right;
+}
+
+/* The search form */
+
+.footer-distributed form{
+  position: relative;
+}
+
+.footer-distributed form input{
+  display: block;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color:  #1f2022;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  border: none;
+
+  font: inherit;
+  font-size: 14px;
+  font-weight: normal;
+  color:  #d1d2d2;
+
+  width: 500px;
+  padding: 18px 50px 18px 18px;
+}
+
+.footer-distributed form input:focus{
+  outline: none;
+}
+
+/* Changing the placeholder color */
+
+.footer-distributed form input::-webkit-input-placeholder {
+  color:  #5c666b;
+}
+
+.footer-distributed form input::-moz-placeholder {
+  opacity: 1;
+  color:  #5c666b;
+}
+
+.footer-distributed form input:-ms-input-placeholder{
+  color:  #5c666b;
+}
+
+/* The magnify glass icon */
+
+.footer-distributed form i{
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 16px;
+  right: 18px;
+
+  color: #d1d2d2;
+  font-size: 18px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1000px) {
+
+  .footer-distributed form input{
+    width: 300px;
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  .footer-distributed{
+    padding: 30px;
+    text-align: center;
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-company-name{
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-right{
+    float: none;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .footer-distributed .footer-left{
+    margin-bottom: 20px;
+  }
+
+  .footer-distributed form input{
+    width: 100%;
+  }
+
+}
+
+.type-2{
+  padding-top: 60px;
+}
+
+.type-2 a:hover .round {
+  background: none;
+}
+.type-2 a:hover .round i {
+  left: 70%;
+}
+.oof a {
+  text-decoration: none;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  padding: 12px 53px 12px 23px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bold;
+  position: relative;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  display: inline-block;
+}
+.oof a span {
+  position: relative;
+  z-index: 3;
+}
+.oof a .round {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  z-index: 2;
+}
+.oof a .round i {
+  position: absolute;
+  top: 50%;
+  margin-top: -6px;
+  left: 50%;
+  margin-left: -4px;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.txt {
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.btn-3 {
+  background-color: #5A5B5E;
+}
+.btn-3 .round {
+  background-color: #737478;
+}
